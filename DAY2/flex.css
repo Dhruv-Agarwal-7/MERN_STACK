@@ -1,0 +1,31 @@
+.parent{
+    background-color: aqua;
+    display: flex;
+}
+.child {
+    background-color: yellow;
+    border: 1px solid red;
+    /* flex-basis: 40px;
+    flex-shrink: 0; */
+}
+.searchbox{
+    background-color: palegoldenrod;
+    /* flex-grow: 3;
+    flex-shrink: 0; */
+}
+
+.parent1{
+    justify-content: space-around;
+}
+
+.parent2{
+    justify-content: space-between;
+}
+
+.parent3{
+    justify-content: space-evenly;
+}
+
+.parent4{
+    justify-content: flex-end;
+}

@@ -39,7 +39,6 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin: 0px, auto, 0px, auto;
 }
 
 .parent{
@@ -47,7 +46,7 @@
 }
 
 .child{
-    font-size: 2em;
+    font-size: 2em; /* It is relative to parent */
     width: 10em;/* It is relative to the child itself */
     background-color: blueviolet;
 }
@@ -62,4 +61,39 @@
 .btn-small{
     
     font-size: 0.5em;
+}
+
+.min-height{
+    background-color: chocolate;
+    min-height: 200px;
+}
+
+.max-height{
+    background-color: chocolate;
+    max-height: 200px;
+}
+
+.list{                                      /*nth child*/
+    ul:first-child{
+        background-color: blueviolet;
+    }
+    ol{
+        background-color: aqua;
+    }
+    ul:last-child{
+        background-color: chartreuse;
+        li:nth-child(3){
+            background-color: red;
+            width: fit-content;
+        }
+    }
+}
+
+.list-type>ol>li:nth-of-type(2){                 /*Child Selector*/
+        background-color: red;
+    }
+
+.sibling1 {                                  /*Adjacent Sibiling Selector*/
+    background-color: blueviolet;
+    
 }
