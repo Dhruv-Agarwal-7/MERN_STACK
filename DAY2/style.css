@@ -1,0 +1,65 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+} */
+
+.margin1{
+    background-color: gold;
+    margin: 20px;
+}
+.margin2{
+    
+    background-color: green;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.content1{
+    width: 60px;
+    background-color: brown;
+}
+
+/* p{
+    margin-top: 40px;
+    padding: 30px;
+    background-color: blueviolet;
+    width: fit-content;
+} */
+
+.righter{
+    background-color: aqua;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.centor{
+    background-color: rgb(255, 0, 179);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px, auto, 0px, auto;
+}
+
+.parent{
+    font-size: 20px;
+}
+
+.child{
+    font-size: 2em;
+    width: 10em;/* It is relative to the child itself */
+    background-color: blueviolet;
+}
+
+.btn{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    border-radius: 20;
+}
+
+.btn-small{
+    
+    font-size: 0.5em;
+}
