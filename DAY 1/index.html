@@ -1,0 +1,45 @@
+ <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Registration Form">
+    <meta name="author" content="Dhruv Agarwal">
+    <title>Registration Form</title>
+    <link href="auth.css" rel="stylesheet"/>
+</head>
+<script>
+    function subm(){
+        alert("Submission Successful");}
+    function rese(){
+        alert("Data Cleared");
+    }
+</script>
+<body bgcolor="#164863">
+<main class="box">
+    <h2>Register</h2>
+    <form>
+        <div class="inputBox">
+            <label for="FullName">Name</label>
+            <input type="text" name="FullName" id="FullName" placeholder="Full Name" required/>
+        </div>
+        <div class="inputBox">
+            <label for="userName">Username</label>
+            <input type="text" name="userName" id="userName" placeholder="type your username" required/>
+        </div>
+        <div class="inputBox">
+            <label for="userPassword">Password</label>
+            <input type="password" name="userPassword" id="userPassword" placeholder="type your password"
+                   required/>
+        </div>
+        <div class="inputBox">
+            <label for="userConfirmPassword">Confirm Password</label>
+            <input type="password" name="userPassword" id="userConfirmPassword" placeholder="confirm your password"
+                   required/>
+        </div>
+        <input type="submit" name="" style="float: left;" onclick="subm()">
+        <input type="reset" value="Reset" style="float: left;" onclick="rese()">
+    </form>
+</main>
+</body>
+</html>
