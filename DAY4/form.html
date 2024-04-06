@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+  </head>
+  <style>
+    .form {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+  </style>
+  <body>
+    <div class="form">
+      <form onsubmit="submitForm(event)">
+        <label>First Name</label>
+        <input
+          type="text"
+          name="firstname"
+          placeholder="First name"
+          onkeydown="firstnamer(event)"
+        />
+        <br /><br />
+        <label>Last Name</label>
+        <input
+          type="text"
+          name="lastname"
+          placeholder="Last name"
+        /><br /><br />
+        <label>Age</label>
+        <input type="number" name="age" placeholder="Age" /><br /><br />
+        <label>Hobbies</label><br /><br />
+        <label>Web Development</label>
+        <input type="checkbox" name="hobbies" value="webD" />
+        <label>Sports</label>
+        <input type="checkbox" name="hobbies" value="sports" />
+        <label>drawing</label>
+        <input type="checkbox" name="hobbies" value="drawing" />
+        <br /><br />
+
+        <input type="submit" />
+      </form>
+    </div>
+    <script>
+      const firstnamer = (e) => {
+        console.log(e.target.value);
+      };
+      const submitForm = (e) => {
+        e.preventDefault();
+        // console.log(e);
+        const info = e.target;
+        const res = {
+          hobbies: [],
+        };
+        for (let i = 0; i < info.length; i++) {
+          const ty = info[i].type;
+          if (ty == "checkbox" && info[i].checked) {
+            // console.log(info[i].value);
+            res.hobbies.push(info[i].value);
+          }
+          if (ty != "checkbox")
+            // console.log(info[i].value);
+            res[info[i].name] = info[i].value;
+        }
+        console.log(res);
+      };
+    </script>
+  </body>
+</html>

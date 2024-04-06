@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h2>JS Practice</h2>
+    <button onclick="fun(event)">Click Me</button>
+    <div>
+        <p>First</p>
+    </div>
+    <script>
+        function fun (e) {
+            const element = document.querySelector('div');
+            const c = document.querySelector('p');
+            element.removeChild(c);
+            element.append("Bantai");
+
+            
+            e.target.setAttribute('style', 'color:red');                   //This Property will be overridden however
+            e.target.setAttribute('style', 'background-color:green');      //with the help of below properties
+            console.log(e);
+            // e.target.style.backgroundColor = 'green';
+            // e.target.style.color = 'red';
+        }
+    </script>
+</body>
+</html>
