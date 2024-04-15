@@ -1,0 +1,16 @@
+{
+  "name": "internal_modules",
+  "version": "1.0.0",
+  "description": "Sup!!\r lorem ipsum",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server"
+  },
+  "author": "Dhruv Agarwal",
+  "license": "ISC",
+  "dependencies": {
+    "kill-port": "^2.0.1",
+    "nodemon": "^3.1.0"
+  }
+}
