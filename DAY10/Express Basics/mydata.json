@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Samsung TV",
+        "price": 68999,
+        "id": 1
+    },
+    {
+        "title": "Phiilips",
+        "price": 42000,
+        "id": 2
+    },
+    {
+        "title": "iPhone 15",
+        "price": 58999,
+        "id": 3
+    },
+    {
+        "title": "Microwave",
+        "price": 15000,
+        "id": 4
+    },
+    {
+        "title": "Window",
+        "price": 5000,
+        "id": 5
+    }
+]

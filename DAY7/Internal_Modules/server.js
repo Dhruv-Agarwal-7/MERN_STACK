@@ -26,8 +26,8 @@ const products = dataObj.products;
 //   </html>
 // `;
 
-const htmlTemplate = fs.readFileSync('./page.html', 'utf-8');
-const cardTemplate = fs.readFileSync('./card.html', 'utf-8');
+const htmlTemplate = fs.readFileSync("./page.html", "utf-8");
+const cardTemplate = fs.readFileSync("./card.html", "utf-8");
 
 // const cardTemplate = `
 // <div class = 'product-card'>
@@ -48,6 +48,8 @@ const allcards = products.map((elem) => {
   let newCard = cardTemplate;
   newCard = newCard
     .replace("_TITLE_", elem.title)
+    .replace("PHOTO", elem.thumbnail)
+    .replace("READ_MORE", `/product?id=${i}`)
     .replace("_INFO_", elem.description);
   return newCard;
 });

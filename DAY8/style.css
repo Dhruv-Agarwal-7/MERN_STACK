@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styling navlist */
+#navlist {
+    background-color: #0074D9;
+    position: absolute;
+    width: 100%;
+}
+
+/* styling navlist anchor element */
+#navlist a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navlist-right {
+    float: right;
+}
+
+/* hover effect of navlist anchor element */
+#navlist a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* styling search bar */
+.search input[type=text] {
+    width: 300px;
+    height: 25px;
+    border-radius: 25px;
+    border: none;
+}
+
+.search {
+    float: right;
+    margin: 7px;
+}
+
+.search button {
+    background-color: #0074D9;
+    color: #f2f2f2;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/* styling logo and tag */
+.content {
+    padding-top: 40px;
+}
+
+.content h1 {
+    color: green;
+}
